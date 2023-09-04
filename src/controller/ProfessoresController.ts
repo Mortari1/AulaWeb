@@ -19,7 +19,7 @@ export class ProfessoresController {
         })
 
         if (!professores) {
-            return "unregistered professores"
+            return "professor não registrado"
         }
         return professores
     }
@@ -44,12 +44,12 @@ export class ProfessoresController {
         let professoresToRemove = await this.professoresRepository.findOneBy({ id })
 
         if (!professoresToRemove) {
-            return "this professores not exist"
+            return "Este professor não existe"
         }
 
         await this.professoresRepository.remove(professoresToRemove)
 
-        return "professores has been removed"
+        return "professor removido"
     }
 
 }
