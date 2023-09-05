@@ -33,4 +33,15 @@ export const Routes = [{
         rout:"/professores/buscar",
         controller: ProfessoresController,
         action: "all"
+}, {
+    method: "get",
+    route: "/professores/buscarunico",
+    controller: UserController,
+    action: "one"
+},
+    {
+    method: "delete",
+    route:"/professores/:id",
+    controller: ProfessoresController,
+    action: "remove"
 },]
