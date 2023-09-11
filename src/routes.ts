@@ -36,7 +36,7 @@ export const Routes = [{
 }, {
     method: "get",
     route: "/professores/buscarunico",
-    controller: UserController,
+    controller: ProfessoresController,
     action: "one"
 },
     {

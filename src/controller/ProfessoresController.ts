@@ -27,7 +27,13 @@ export class ProfessoresController extends ControllerBase {
 
     async save(request: Request, response: Response, next: NextFunction) {
         const { nome, sobrenome, idade, formacao, especializacao } = request.body;
-
+        this.isRequired(nome,"Primeiro Nome é necessário");
+        if(!this.valid){
+            return{
+                status: 400,
+                error: this.retornaNotificacao
+            }
+        }
         const professores = Object.assign(new Professores(), {
             nome,
             sobrenome,

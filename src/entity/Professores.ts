@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, Timestamp } from "typeorm"
+import { Entity, PrimaryGeneratedColumn, Column, Timestamp, CreateDateColumn } from "typeorm"
 
 @Entity()
 export class Professores {
@@ -21,7 +21,7 @@ export class Professores {
     @Column()
     especializacao: string;
 
-    @Column()
+    @CreateDateColumn()
     dataHora: Timestamp;
 
 }
