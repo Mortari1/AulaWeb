@@ -1,8 +1,9 @@
 import { AppDataSource } from "../data-source"
 import { NextFunction, Request, Response } from "express"
 import { User } from "../entity/User"
+import { ControllerBase } from "./ControllerBase"
 
-export class UserController {
+export class UserController extends ControllerBase {
 
     private userRepository = AppDataSource.getRepository(User)
 
