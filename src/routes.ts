@@ -30,7 +30,7 @@ export const Routes = [{
 },
     {
         method:"get",
-        rout:"/professores/buscar",
+        route:"/professores/buscar",
         controller: ProfessoresController,
         action: "all"
 }, {
