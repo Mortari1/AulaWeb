@@ -1,0 +1,23 @@
+{
+    "medicos":[{
+        "nome":"Mauro",
+        "sobreNome":"Nakama",
+        "sexo":"m",
+        "idade":57
+    },{
+        "nome":"Luiz",
+        "sobreNome":"Gonçalvez",
+        "sexo":"m",
+        "idade":65
+    },{
+        "nome":"Laura",
+        "sobreNome":"Ustulin",
+        "sexo":"f",
+        "idade":37
+    },{
+        "nome":"Pamela",
+        "sobreNome":"Rodriguez",
+        "sexo":"f",
+        "idade":"29"
+    }]
+}
